@@ -9,7 +9,7 @@ from groq import Groq
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # ---------------------------------------
-# Utility: Normalize text → skill tokens
+# Utility: Normalize text → skill tokens added 
 # ---------------------------------------
 STOP_WORDS = {
     "and", "or", "with", "using", "experience", "development",
