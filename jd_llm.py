@@ -1,4 +1,5 @@
 import os
+import streamlit as st
 import json
 import re
 from groq import Groq
@@ -6,7 +7,8 @@ from groq import Groq
 # ---------------------------------------
 # Groq Client
 # ---------------------------------------
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 # ---------------------------------------
 # Utility: Normalize text → skill tokens added 
